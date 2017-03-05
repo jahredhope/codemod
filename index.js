@@ -1,5 +1,5 @@
 const { writeFile, readFile } = require('./file')
-const { writeFileWithImports } = require('./writeFileWithImports')
+const writeFileWithImports = require('./writeFileWithImports')
 const findFilesWith = require('./findFilesWith')
 const { log, writeLog } = require('./logger')
 const camelCase = require('camelcase')
