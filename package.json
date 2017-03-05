@@ -1,0 +1,22 @@
+{
+  "name": "codemod",
+  "version": "0.0.1",
+  "description": "Utilities for modifying your code with code",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "codemod"
+  ],
+  "author": "Jahred Hope <jahredhope@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "babylon": "^6.16.1",
+    "camelcase": "^4.0.0",
+    "eslint": "^3.17.0",
+    "eslint-plugin-import": "^2.2.0",
+    "prettier": "^0.21.0",
+    "recursive-readdir": "^2.1.1"
+  }
+}
