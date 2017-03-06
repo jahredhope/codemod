@@ -36,7 +36,7 @@ module.exports = (fileName, { content, imports, namelessImports }, replaceOld) =
   const newImports = {}
   const newNamelessImports = existingNamelessImports
   if (namelessImports) {
-    newNamelessImports.add.apply(newNamelessImports, namelessImports)
+    namelessImports.forEach((namelessImport => { newNamelessImports.add(namelessImport) }))
   }
   if (!replaceOld) {
     Object.assign(newImports, existingImports)
