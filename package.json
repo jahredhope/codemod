@@ -1,6 +1,6 @@
 {
   "name": "codemod",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utilities for modifying your code with code",
   "main": "index.js",
   "scripts": {
