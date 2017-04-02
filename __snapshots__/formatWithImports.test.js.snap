@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatWithImports render with imports 1`] = `
+"const aVar = require('./aVar');
+const bVar = require('./bVar');
+
+require('./nameless');
+
+window.cVar = require('./cVar');
+
+initial
+content"
+`;
+
+exports[`formatWithImports should remove duplicate includes 1`] = `
+"const aVar = require('./aVar');
+const bVar = require('./bVar');
+
+initial
+content"
+`;

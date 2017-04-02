@@ -1,14 +1,17 @@
 const fs = require('fs')
 const path = require('path')
 
-let logOutput = ''
+let logOutput = []
+
+let reportFileLocation = path.join(process.cwd(), 'output.log')
 function log(...args) {
-  logOutput += args.join(' ') + '\n'
+  logOutput.push(args.join(' '))
 }
 function writeLog(...args) {
   log(...args)
   console.log(...args)
-  fs.writeFileSync(path.join(__dirname, 'output.log'), logOutput)
+  console.log('writing log to', reportFileLocation)
+  fs.writeFileSync(reportFileLocation, logOutput.join('\n'))
 }
 
-module.exports = { log, writeLog }
+module.exports = { log, writeLog, reportFileLocation }

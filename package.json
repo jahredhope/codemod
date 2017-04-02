@@ -4,7 +4,7 @@
   "description": "Utilities for modifying your code with code",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "keywords": [
     "codemod"
@@ -16,7 +16,9 @@
     "camelcase": "^4.0.0",
     "eslint": "^3.17.0",
     "eslint-plugin-import": "^2.2.0",
+    "jest": "^19.0.2",
     "prettier": "^0.21.0",
-    "recursive-readdir": "^2.1.1"
+    "recursive-readdir": "^2.1.1",
+    "some-values": "^0.0.1"
   }
 }
