@@ -4,7 +4,9 @@
   "description": "Utilities for modifying your code with code",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "codemod"
@@ -19,6 +21,8 @@
     "jest": "^19.0.2",
     "prettier": "^0.21.0",
     "recursive-readdir": "^2.1.1",
-    "some-values": "^0.0.1"
-  }
+    "some-values": "^0.0.1",
+    "snyk": "^1.40.4"
+  },
+  "snyk": true
 }
